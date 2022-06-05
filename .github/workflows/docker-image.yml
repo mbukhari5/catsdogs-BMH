@@ -28,7 +28,7 @@ jobs:
     - name: build catbmh image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: docker_bmh
+        ECR_REPOSITORY: assignment835_1
         IMAGE_TAG: catbmh
       run: |
         cd cats/
@@ -38,7 +38,7 @@ jobs:
     - name: build dogbmh image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: docker_bmh
+        ECR_REPOSITORY: assignment835_1
         IMAGE_TAG: dogbmh
       run: |
         cd dogs/
